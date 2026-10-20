@@ -5,21 +5,21 @@
 class Godelta < Formula
   desc "Visualize Go function changes in local diffs and pull requests"
   homepage "https://github.com/leonhfr/godelta"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leonhfr/godelta/releases/download/v0.0.2/godelta_0.0.2_darwin_amd64.tar.gz"
-      sha256 "3e585c09f9596c30ba263b7164108334c2350f9a7eb5648006ef754c8bd8c224"
+      url "https://github.com/leonhfr/godelta/releases/download/v0.0.3/godelta_0.0.3_darwin_amd64.tar.gz"
+      sha256 "569a514e7c9d79cc29238ac70fd762c2603c5fbc22a633f8ea4bc1ac11f06768"
 
       define_method(:install) do
         bin.install "godelta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leonhfr/godelta/releases/download/v0.0.2/godelta_0.0.2_darwin_arm64.tar.gz"
-      sha256 "288200f19007cf4b1ffdfe6058d39958a2dc735239dfc727e69ec00ead458146"
+      url "https://github.com/leonhfr/godelta/releases/download/v0.0.3/godelta_0.0.3_darwin_arm64.tar.gz"
+      sha256 "47b5624ac6d8d11088139328ed2b2f580714a3dedee85df7c982af5a9145b93a"
 
       define_method(:install) do
         bin.install "godelta"
@@ -29,15 +29,15 @@ class Godelta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leonhfr/godelta/releases/download/v0.0.2/godelta_0.0.2_linux_amd64.tar.gz"
-      sha256 "f313cc1a63000061e46de3ccfe592af43f74b29c5ec5ea09037ad4c3371e5e6b"
+      url "https://github.com/leonhfr/godelta/releases/download/v0.0.3/godelta_0.0.3_linux_amd64.tar.gz"
+      sha256 "56a6a8e873f2831bb55284647ce726e9ba82982abc568efbb1e7a04260dd91f0"
       define_method(:install) do
         bin.install "godelta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leonhfr/godelta/releases/download/v0.0.2/godelta_0.0.2_linux_arm64.tar.gz"
-      sha256 "d3a0c3d3559d9908cb3d63879f9149392e3260759a11517dc14a2c3328431f86"
+      url "https://github.com/leonhfr/godelta/releases/download/v0.0.3/godelta_0.0.3_linux_arm64.tar.gz"
+      sha256 "c29771e7591beb795503f278a84eca90cc114f38e6330a3416d6330cdb8b211c"
       define_method(:install) do
         bin.install "godelta"
       end
